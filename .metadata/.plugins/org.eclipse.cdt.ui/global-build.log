@@ -1,0 +1,236 @@
+
+**** Build of configuration isk for project mmwave_sdk_18xx_dss ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../mmw_dss.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_50_08_24_core/xs" --xdcpath="C:/ti/bios_6_73_01_01/packages;C:/ti/mathlib_c674x_3_1_2_1/packages;" xdc.tools.configuro -o configPkg -t ti.targets.elf.C674 -p ti.platforms.c6x:IWR18XX:false:600 -r release -c "C:/ti/ti-cgt-c6000_8.3.3" --compileOptions "--enum_type=int " "../mmw_dss.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring mmw_dss.xe674 from package/cfg/mmw_dss_pe674.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_dss/src/sysbios/sysbios.ae674 ...
+gmake[1]: Entering directory `C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_dss/src/sysbios'
+cle674 C:/ti/bios_6_73_01_01/packages/ti/sysbios/BIOS.c ...
+asme674 C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/c64p/Exception_asm.s64P ...
+asme674 C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/c64p/Hwi_asm.s62 ...
+asme674 C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/c64p/Hwi_asm_switch.s62 ...
+asme674 C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/c64p/Hwi_disp_always.s64P ...
+asme674 C:/ti/bios_6_73_01_01/packages/ti/sysbios/rts/ti/tls_get_tp.asm ...
+asme674 C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/c62/TaskSupport_asm.s62 ...
+are674 BIOS.obj c64p_Exception_asm.obj c64p_Hwi_asm.obj c64p_Hwi_asm_switch.obj c64p_Hwi_disp_always.obj ti_tls_get_tp.obj c62_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_dss/src/sysbios'
+Build of libraries done.
+cle674 package/cfg/mmw_dss_pe674.c ...
+"C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Text.c", line 218: remark #2142-D: comparison between signed and unsigned operands
+"C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Text.c", line 237: remark #2142-D: comparison between signed and unsigned operands
+Finished building: "../mmw_dss.cfg"
+ 
+Building file: "../data_path.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.3/bin/cl6x" -mv6740 --abi=eabi -O3 --opt_for_speed=3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_dss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/ti-cgt-c6000_8.3.3/include" --define=SOC_XWR18XX --define=SUBSYS_DSS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DOWNLOAD_FROM_CCS --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --gcc --diag_error=10015 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --obj_extension=.oe674 --preproc_with_compile --preproc_dependency="data_path.d_raw" --cmd_file="configPkg/compiler.opt"  "../data_path.c"
+Finished building: "../data_path.c"
+ 
+Building file: "../dss_main.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.3/bin/cl6x" -mv6740 --abi=eabi -O3 --opt_for_speed=3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_dss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/ti-cgt-c6000_8.3.3/include" --define=SOC_XWR18XX --define=SUBSYS_DSS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DOWNLOAD_FROM_CCS --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --gcc --diag_error=10015 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --obj_extension=.oe674 --preproc_with_compile --preproc_dependency="dss_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../dss_main.c"
+Finished building: "../dss_main.c"
+ 
+Building file: "../objectdetection.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.3/bin/cl6x" -mv6740 --abi=eabi -O3 --opt_for_speed=3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_dss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/ti-cgt-c6000_8.3.3/include" --define=SOC_XWR18XX --define=SUBSYS_DSS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DOWNLOAD_FROM_CCS --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --gcc --diag_error=10015 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --obj_extension=.oe674 --preproc_with_compile --preproc_dependency="objectdetection.d_raw" --cmd_file="configPkg/compiler.opt"  "../objectdetection.c"
+Finished building: "../objectdetection.c"
+ 
+Building target: "xwr18xx_mmw_demo_dss_isk.xe674"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.3/bin/cl6x" -mv6740 --abi=eabi -O3 --opt_for_speed=3 --define=SOC_XWR18XX --define=SUBSYS_DSS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DOWNLOAD_FROM_CCS --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --gcc --diag_error=10015 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --obj_extension=.oe674 -z -m"xwr18xx_mmw_demo_dss_isk.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.3/lib" -i"C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_dss" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/control/mmwave/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/control/mmwavelink/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/control/dpm/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/alg/mmwavelib/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/crc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/soc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/osal/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/mailbox/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/edma/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/adcbuf/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/cbuff/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/hwa/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/utils/hsiheader/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/utils/mathutils/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/dpu/dopplerproc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/dpu/cfarcaproc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/dpu/staticclutterproc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpu/rangeproc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpedma/lib" -i"C:/ti/mathlib_c674x_3_1_2_1/packages/ti/mathlib/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/dpu/aoaproc/lib" -i"C:/ti/ti-cgt-c6000_8.3.3/include" --reread_libs --disable_auto_rts --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --diag_error=10015 --diag_warning=225 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="xwr18xx_mmw_demo_dss_linkInfo.xml" --ram_model --unused_section_elimination=on -o "xwr18xx_mmw_demo_dss_isk.xe674" "./data_path.oe674" "./dss_main.oe674" "./objectdetection.oe674" "../c674x_linker.cmd" "../mmw_dss_linker.cmd" -l"configPkg/linker.cmd"  -lmathlib.ae674 -llibmathutils.ae674 -llibsoc_xwr18xx.ae674 -llibosal_xwr18xx.ae674 -llibcrc_xwr18xx.ae674 -llibmailbox_xwr18xx.ae674 -llibmmwavelink_xwr18xx.ae674 -llibmmwave_xwr18xx.ae674 -llibedma_xwr18xx.ae674 -llibadcbuf_xwr18xx.ae674 -llibmmwavealg_xwr18xx.ae674 -llibcbuff_xwr18xx.ae674 -llibhsiheader_xwr18xx.ae674 -llibcfarcaproc_hwa_xwr18xx.ae674 -llibdopplerproc_hwa_xwr18xx.ae674 -llibdpm_xwr18xx.ae674 -llibdpedma_hwa_xwr18xx.ae674 -llibhwa_xwr18xx.ae674 -llibrangeproc_hwa_xwr18xx.ae674 -llibstaticclutterproc_xwr18xx.ae674 -lrts6740_elf.lib -llibaoaproc_hwa_xwr18xx.ae674 -llibc.a 
+<Linking>
+Finished building target: "xwr18xx_mmw_demo_dss_isk.xe674"
+ 
+rm -f xwr18xx_mmw_demo_dss_isk.bin
+makefile:191: recipe for target 'post-build' failed
+process_begin: CreateProcess(NULL, rm -f xwr18xx_mmw_demo_dss_isk.bin, ...) failed.
+make (e=2): Le fichier spécifié est introuvable.
+ 
+gmake[2]: [post-build] Error 2 (ignored)
+C:/ti/mmwave_sdk_03_05_00_04/packages/scripts/ImageCreator/out2rprc/out2rprc.exe xwr18xx_mmw_demo_dss_isk.xe674 xwr18xx_mmw_demo_dss_isk.bin
+Parsing the input object file, xwr18xx_mmw_demo_dss_isk.xe674.
+Appending zeros 8487936
+Appending zeros 8506528
+Appending zeros 8512752
+Appending zeros 8512940
+File conversion complete!
+ 
+
+**** Build Finished ****
+
+**** Build of configuration isk for project mmwave_sdk_18xx_dss ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'xwr18xx_mmw_demo_dss_isk.xe674' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration isk for project mmwave_sdk_18xx_mss ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../mmw_mss.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_50_08_24_core/xs" --xdcpath="C:/ti/bios_6_73_01_01/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.R4Ft -p ti.platforms.cortexR:IWR18XX:false:200 -r release -c "C:/ti/ti-cgt-arm_16.9.6.LTS" --compileOptions "--enum_type=int " "../mmw_mss.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring mmw_mss.xer4ft from package/cfg/mmw_mss_per4ft.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss/src/sysbios/sysbios.aer4ft ...
+gmake[1]: Entering directory `C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss/src/sysbios'
+cler4ft C:/ti/bios_6_73_01_01/packages/ti/sysbios/BIOS.c ...
+asmer4ft C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/arm/IntrinsicsSupport_asm.asm ...
+asmer4ft C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/arm/TaskSupport_asm.asm ...
+asmer4ft C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/arm/v7r/vim/Hwi_asm.sv7R ...
+asmer4ft C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/arm/v7r/vim/Hwi_asm_switch.sv7R ...
+asmer4ft C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/arm/exc/Exception_asm.asm ...
+asmer4ft C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/arm/v7r/tms570/Core_asm.sv7R ...
+asmer4ft C:/ti/bios_6_73_01_01/packages/ti/sysbios/family/arm/a15/TimestampProvider_asm.asm ...
+arer4ft BIOS.obj arm_IntrinsicsSupport_asm.obj arm_TaskSupport_asm.obj vim_Hwi_asm.obj vim_Hwi_asm_switch.obj exc_Exception_asm.obj tms570_Core_asm.obj a15_TimestampProvider_asm.obj ...
+gmake[1]: Leaving directory `C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss/src/sysbios'
+Build of libraries done.
+cler4ft package/cfg/mmw_mss_per4ft.c ...
+Finished building: "../mmw_mss.cfg"
+ 
+Building file: "../mmwdemo_flash.c"
+Invoking: Arm Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/objdetrangehwa" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/common" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f --preproc_with_compile --preproc_dependency="mmwdemo_flash.d_raw" --cmd_file="configPkg/compiler.opt"  "../mmwdemo_flash.c"
+Finished building: "../mmwdemo_flash.c"
+ 
+Building file: "../mmwdemo_monitor.c"
+Invoking: Arm Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/objdetrangehwa" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/common" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f --preproc_with_compile --preproc_dependency="mmwdemo_monitor.d_raw" --cmd_file="configPkg/compiler.opt"  "../mmwdemo_monitor.c"
+Finished building: "../mmwdemo_monitor.c"
+ 
+Building file: "../mmwdemo_adcconfig.c"
+Invoking: Arm Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/objdetrangehwa" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/common" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f --preproc_with_compile --preproc_dependency="mmwdemo_adcconfig.d_raw" --cmd_file="configPkg/compiler.opt"  "../mmwdemo_adcconfig.c"
+Finished building: "../mmwdemo_adcconfig.c"
+ 
+Building file: "../mmwdemo_rfparser.c"
+Invoking: Arm Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/objdetrangehwa" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/common" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f --preproc_with_compile --preproc_dependency="mmwdemo_rfparser.d_raw" --cmd_file="configPkg/compiler.opt"  "../mmwdemo_rfparser.c"
+Finished building: "../mmwdemo_rfparser.c"
+ 
+Building file: "../mmw_lvds_stream.c"
+Invoking: Arm Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/objdetrangehwa" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/common" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f --preproc_with_compile --preproc_dependency="mmw_lvds_stream.d_raw" --cmd_file="configPkg/compiler.opt"  "../mmw_lvds_stream.c"
+Finished building: "../mmw_lvds_stream.c"
+ 
+Building file: "../objdetrangehwa.c"
+Invoking: Arm Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/objdetrangehwa" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/common" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f --preproc_with_compile --preproc_dependency="objdetrangehwa.d_raw" --cmd_file="configPkg/compiler.opt"  "../objdetrangehwa.c"
+Finished building: "../objdetrangehwa.c"
+ 
+Building file: "../mmw_cli.c"
+Invoking: Arm Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/objdetrangehwa" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/common" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f --preproc_with_compile --preproc_dependency="mmw_cli.d_raw" --cmd_file="configPkg/compiler.opt"  "../mmw_cli.c"
+Finished building: "../mmw_cli.c"
+ 
+Building file: "../mss_main.c"
+Invoking: Arm Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/objdetrangehwa" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/common" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f --preproc_with_compile --preproc_dependency="mss_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../mss_main.c"
+Finished building: "../mss_main.c"
+ 
+Building target: "xwr18xx_mmw_demo_mss_isk.xer4f"
+Invoking: Arm Linker
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f -z -m"xwr18xx_mmw_demo_mss_isk.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/control/mmwave/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/control/mmwavelink/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/control/dpm/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/adcbuf/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/crc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/dma/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/edma/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/esm/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/gpio/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/hwa/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/mailbox/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/osal/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/pinmux/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/soc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/uart/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/qspi/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/qspiflash/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/utils/cli/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/utils/mathutils/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpu/rangeproc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpedma/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/cbuff/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/utils/hsiheader/lib" -i"C:/ti/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --disable_auto_rts --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --diag_error=10015 --diag_warning=225 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="xwr18xx_mmw_demo_mss_linkInfo.xml" --rom_model --unused_section_elimination=on -o "xwr18xx_mmw_demo_mss_isk.xer4f" "./mmw_cli.oer4f" "./mmw_lvds_stream.oer4f" "./mmwdemo_adcconfig.oer4f" "./mmwdemo_flash.oer4f" "./mmwdemo_monitor.oer4f" "./mmwdemo_rfparser.oer4f" "./mss_main.oer4f" "./objdetrangehwa.oer4f" "../mmw_mss_linker.cmd" "../r4f_linker.cmd" -l"configPkg/linker.cmd"  -llibosal_xwr18xx.aer4f -llibesm_xwr18xx.aer4f -llibgpio_xwr18xx.aer4f -llibsoc_xwr18xx.aer4f -llibpinmux_xwr18xx.aer4f -llibcrc_xwr18xx.aer4f -llibuart_xwr18xx.aer4f -llibqspi_xwr18xx.aer4f -llibqspiflash_xwr18xx.aer4f -llibmailbox_xwr18xx.aer4f -llibmmwavelink_xwr18xx.aer4f -llibmmwave_xwr18xx.aer4f -llibadcbuf_xwr18xx.aer4f -llibdma_xwr18xx.aer4f -llibedma_xwr18xx.aer4f -llibcli_xwr18xx.aer4f -llibhwa_xwr18xx.aer4f -llibdpm_xwr18xx.aer4f -llibmathutils.aer4f -llibcbuff_xwr18xx.aer4f -llibhsiheader_xwr18xx.aer4f -llibrangeproc_hwa_xwr18xx.aer4f -llibdpedma_hwa_xwr18xx.aer4f -lrtsv7R4_T_le_v3D16_eabi.lib -llibc.a 
+<Linking>
+Finished building target: "xwr18xx_mmw_demo_mss_isk.xer4f"
+ 
+rm -f C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss/xwr18xx_mmw_demo_isk.bin
+makefile:201: recipe for target 'post-build' failed
+process_begin: CreateProcess(NULL, rm -f C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss/xwr18xx_mmw_demo_isk.bin, ...) failed.
+make (e=2): Le fichier spécifié est introuvable.
+ 
+gmake[2]: [post-build] Error 2 (ignored)
+C:/ti/mmwave_sdk_03_05_00_04/packages/scripts/ImageCreator/out2rprc/out2rprc.exe xwr18xx_mmw_demo_mss_isk.xer4f xwr18xx_mmw_demo_mss_isk.tmp
+Parsing the input object file, xwr18xx_mmw_demo_mss_isk.xer4f.
+Appending zeros 0
+Appending zeros 256
+Appending zeros 119592
+File conversion complete!
+C:/ti/mmwave_sdk_03_05_00_04/packages/scripts/ImageCreator/multicore_image_generator/MulticoreImageGen.exe LE 37 0x00000008 xwr18xx_mmw_demo_isk.bin 0x35510000 xwr18xx_mmw_demo_mss_isk.tmp 0xb5510000 C:/ti/mmwave_sdk_03_05_00_04/firmware/radarss/xwr18xx_radarss_rprc.bin 0xd5510000 C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_dss/isk/xwr18xx_mmw_demo_dss_isk.bin
+Number of Input Files 3
+Number of zeros 32
+Number of zeros 16
+ 
+C:/ti/mmwave_sdk_03_05_00_04/packages/scripts/ImageCreator/crc_multicore_image/crc_multicore_image.exe xwr18xx_mmw_demo_isk.bin xwr18xx_mmw_demo_isk.tmp
+size of App Image is 321216 bytes
+cur_crc_read_addr 128
+cur_crc_read_addr 124992
+cur_crc_read_addr 159872
+Failed to remove CRC temp file
+ 
+C:/ti/mmwave_sdk_03_05_00_04/packages/scripts/ImageCreator/append_bin_crc/gen_bincrc32.exe xwr18xx_mmw_demo_isk.bin
+>>>> Binary CRC32 = 4c3a18bb <<<<
+>>>> Total bytes in binary file 321220 <<<<
+ 
+ 
+
+**** Build Finished ****
+
+**** Build of configuration isk for project mmwave_sdk_18xx_dss ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'xwr18xx_mmw_demo_dss_isk.xe674' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration isk for project mmwave_sdk_18xx_mss ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../mss_main.c"
+Invoking: Arm Compiler
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --include_path="C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/xwr18xx/mmw" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/demo/utils" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/objdetrangehwa" --include_path="C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/objectdetection/common" --include_path="C:/ti/ti-cgt-arm_16.9.6.LTS/include" --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f --preproc_with_compile --preproc_dependency="mss_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../mss_main.c"
+Finished building: "../mss_main.c"
+ 
+Building target: "xwr18xx_mmw_demo_mss_isk.xer4f"
+Invoking: Arm Linker
+"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7R4 --code_state=16 --float_support=VFPv3D16 -me -O3 --define=SOC_XWR18XX --define=SUBSYS_MSS --define=DOWNLOAD_FROM_CCS --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --define=DebugP_ASSERT_ENABLED --define=_LITTLE_ENDIAN --define=OBJDET_NO_RANGE --define=APP_RESOURCE_FILE='<'ti/demo/xwr18xx/mmw/mmw_res.h'>' -g --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --enum_type=int --abi=eabi --obj_extension=.oer4f -z -m"xwr18xx_mmw_demo_mss_isk.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/control/mmwave/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/control/mmwavelink/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/control/dpm/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/adcbuf/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/crc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/dma/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/edma/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/esm/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/gpio/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/hwa/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/mailbox/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/osal/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/pinmux/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/soc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/uart/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/qspi/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/qspiflash/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/utils/cli/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/utils/mathutils/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpu/rangeproc/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpedma/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/drivers/cbuff/lib" -i"C:/ti/mmwave_sdk_03_05_00_04/packages/ti/utils/hsiheader/lib" -i"C:/ti/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --disable_auto_rts --define=MMWAVE_L3RAM_NUM_BANK=6 --define=MMWAVE_SHMEM_TCMA_NUM_BANK=0 --define=MMWAVE_SHMEM_TCMB_NUM_BANK=0 --define=MMWAVE_SHMEM_BANK_SIZE=0x20000 --diag_error=10015 --diag_warning=225 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="xwr18xx_mmw_demo_mss_linkInfo.xml" --rom_model --unused_section_elimination=on -o "xwr18xx_mmw_demo_mss_isk.xer4f" "./mmw_cli.oer4f" "./mmw_lvds_stream.oer4f" "./mmwdemo_adcconfig.oer4f" "./mmwdemo_flash.oer4f" "./mmwdemo_monitor.oer4f" "./mmwdemo_rfparser.oer4f" "./mss_main.oer4f" "./objdetrangehwa.oer4f" "../mmw_mss_linker.cmd" "../r4f_linker.cmd" -l"configPkg/linker.cmd"  -llibosal_xwr18xx.aer4f -llibesm_xwr18xx.aer4f -llibgpio_xwr18xx.aer4f -llibsoc_xwr18xx.aer4f -llibpinmux_xwr18xx.aer4f -llibcrc_xwr18xx.aer4f -llibuart_xwr18xx.aer4f -llibqspi_xwr18xx.aer4f -llibqspiflash_xwr18xx.aer4f -llibmailbox_xwr18xx.aer4f -llibmmwavelink_xwr18xx.aer4f -llibmmwave_xwr18xx.aer4f -llibadcbuf_xwr18xx.aer4f -llibdma_xwr18xx.aer4f -llibedma_xwr18xx.aer4f -llibcli_xwr18xx.aer4f -llibhwa_xwr18xx.aer4f -llibdpm_xwr18xx.aer4f -llibmathutils.aer4f -llibcbuff_xwr18xx.aer4f -llibhsiheader_xwr18xx.aer4f -llibrangeproc_hwa_xwr18xx.aer4f -llibdpedma_hwa_xwr18xx.aer4f -lrtsv7R4_T_le_v3D16_eabi.lib -llibc.a 
+<Linking>
+Finished building target: "xwr18xx_mmw_demo_mss_isk.xer4f"
+ 
+rm -f C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss/xwr18xx_mmw_demo_isk.bin
+makefile:201: recipe for target 'post-build' failed
+process_begin: CreateProcess(NULL, rm -f C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_mss/xwr18xx_mmw_demo_isk.bin, ...) failed.
+make (e=2): Le fichier spécifié est introuvable.
+ 
+gmake[2]: [post-build] Error 2 (ignored)
+C:/ti/mmwave_sdk_03_05_00_04/packages/scripts/ImageCreator/out2rprc/out2rprc.exe xwr18xx_mmw_demo_mss_isk.xer4f xwr18xx_mmw_demo_mss_isk.tmp
+Parsing the input object file, xwr18xx_mmw_demo_mss_isk.xer4f.
+Appending zeros 0
+Appending zeros 256
+Appending zeros 119720
+File conversion complete!
+C:/ti/mmwave_sdk_03_05_00_04/packages/scripts/ImageCreator/multicore_image_generator/MulticoreImageGen.exe LE 37 0x00000008 xwr18xx_mmw_demo_isk.bin 0x35510000 xwr18xx_mmw_demo_mss_isk.tmp 0xb5510000 C:/ti/mmwave_sdk_03_05_00_04/firmware/radarss/xwr18xx_radarss_rprc.bin 0xd5510000 C:/Users/Admin/Desktop/latestwork2oob1/mmwave_sdk_18xx_dss/isk/xwr18xx_mmw_demo_dss_isk.bin
+Number of Input Files 3
+Number of zeros 24
+Number of zeros 16
+ 
+C:/ti/mmwave_sdk_03_05_00_04/packages/scripts/ImageCreator/crc_multicore_image/crc_multicore_image.exe xwr18xx_mmw_demo_isk.bin xwr18xx_mmw_demo_isk.tmp
+size of App Image is 321344 bytes
+cur_crc_read_addr 128
+cur_crc_read_addr 125120
+cur_crc_read_addr 160000
+Failed to remove CRC temp file
+ 
+C:/ti/mmwave_sdk_03_05_00_04/packages/scripts/ImageCreator/append_bin_crc/gen_bincrc32.exe xwr18xx_mmw_demo_isk.bin
+>>>> Binary CRC32 = 07bf8892 <<<<
+>>>> Total bytes in binary file 321348 <<<<
+ 
+ 
+
+**** Build Finished ****

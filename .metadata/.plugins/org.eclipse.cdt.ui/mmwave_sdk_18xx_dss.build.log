@@ -1,0 +1,8 @@
+
+**** Build of configuration isk for project mmwave_sdk_18xx_dss ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'xwr18xx_mmw_demo_dss_isk.xe674' is up to date.
+
+**** Build Finished ****
